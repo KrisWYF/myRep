@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+   <style>
+  .el-tabs__item.is-active{
+
+    color: #ff406f !important;
+
+       }
+  .el-tabs__item, .el-tabs__nav, .el-tabs__header{
+
+      border:none !important;
+  }
+  .el-tabs__nav{
+    margin-top: 20px !important;
+  }
+.el-tabs__nav div:nth-child(2){
+       padding-left: 0px !important;
+ }
+ .el-tabs__nav div:nth-child(1){
+      padding: 0 60px !important;
+ }
+ .wh_content_all{
+  padding-bottom: 25px!important;
+  border-bottom: 1px solid #808080;
+  background: #fff !important;
+
+ }
+
+ .wh_is_today {
+    background-color:#ff406f !important;
+    color: #fff !important;
+  }
+  .wh_content_item{
+    color: #666 !important;
+  }
+
+
+   </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">    
+        <title>loveliness</title>
+        <script>
+          
+                 (function (doc, win) {
+            var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        if(clientWidth>=750){
+                            docEl.style.fontSize = '100px';
+                        }else{
+                            docEl.style.fontSize = 40 * (clientWidth / 750) + 'px';
+                        }
+                    };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        </script>
+
+  </head>
+  <body>
+
+    <div id="app">
+      
+    </div>
+   
+    <!-- built files will be auto injected -->
+  </body>
+</html>
