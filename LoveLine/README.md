@@ -1,1 +1,1 @@
-我是热admin
+readmin
